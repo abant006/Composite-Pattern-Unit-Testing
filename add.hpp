@@ -9,6 +9,7 @@ class Add : public Base {
 		Base* left;
 		Base* right;
 	public:
+		Add() { }
 		Add(Base* left, Base* right) { this->left = left; this->right = right; }
 		virtual double evaluate() { return left->evaluate() + right->evaluate(); }
 		virtual std::string stringify() { return left->stringify() + " + " + right->stringify(); }
