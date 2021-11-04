@@ -10,27 +10,23 @@ class Op : public Base {
     public:
         Op(double value) : Base() { this->value = value; }
         virtual double evaluate() { return value; }
-	// sstream?
         virtual std::string stringify() {
-	if (value == 0) {
-	return "0";
+		return std::to_string(value);
 	}
-	std::string str = std::to_string((value));
-   }
 };
 
 class OpPositiveMock : public Base {
 	public:
 		OpPositiveMock() { }
-		virtual double evaluate() { return 1.0; }
-		virtual std::string stringify() { return "1" }
+		virtual double evaluate() { return 2.0; }
+		virtual std::string stringify() { return "2.000000"; }
 };
 
 class OpNegMock : public Base {
 	public:
 		OpNegMock() { }
-		virtual double evaluate() { return -1.0; }
-		virtual std::string stringify() { return "-1"; }
+		virtual double evaluate() { return -2.0; }
+		virtual std::string stringify() { return "-2.000000"; }
 };
 
 class OpZeroMock : public Base {
