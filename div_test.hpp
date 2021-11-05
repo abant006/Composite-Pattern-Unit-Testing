@@ -31,13 +31,6 @@ TEST(Div, divNegResult) {
         EXPECT_EQ(test->evaluate(),-5);
 }
 
-TEST(Div, divZeroPVal) {
-        Op* v1 = new Op(2);
-        Op* v2 = new Op(0);
-        Div* test = new Div (v1,v2);
-        EXPECT_EQ(test->evaluate(), INFINITY);
-}
-
 TEST(Div, divZeroNVal) {
         Op* v1 = new Op(0);
         Op* v2 = new Op(3);
