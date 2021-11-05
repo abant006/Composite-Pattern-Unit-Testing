@@ -7,7 +7,7 @@
 
 TEST(RandT, RandEval) {
 	Rand* test = new Rand();
-	Expect_GT(test->evaluate(),0);
+	EXPECT_GT(test->evaluate(),0);
 }
 
 #endif	
