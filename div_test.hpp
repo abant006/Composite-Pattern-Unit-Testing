@@ -2,7 +2,7 @@
 #define __DIV_TEST_HPP__
 
 #include "gtest/gtest.h"
-#include "sub.hpp"
+#include "div.hpp"
 #include "op.hpp"
 
 TEST(Div, divNegVal) {
