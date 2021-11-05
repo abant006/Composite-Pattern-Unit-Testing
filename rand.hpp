@@ -19,7 +19,7 @@ class Rand : public Base{
                         return value;
                 }
 
-                virtual std::string stringfy{} {
+                virtual std::string stringfy() {
                         std::ostringstream sstream;
                         sstream << value;
                         return sstream.str();
