@@ -54,7 +54,7 @@ TEST(Div, divNegResultS) {
         Op* v1 = new Op(-4);
         Op* v2 = new Op(-2);
         Div* test = new Div (v1,v2);
-        EXPECT_EQ(test->stringify(),"-4.000000 - 2.000000 ");
+        EXPECT_EQ(test->stringify(),"-4.000000 / 2.000000 ");
 }
 
 #endif
