@@ -54,7 +54,7 @@ TEST(Sub, subNegResultS) {
         Op* v1 = new Op(-3);
         Op* v2 = new Op(-7);
         Sub* test = new Sub (v1,v2);
-        EXPECT_EQ(test->stringify(),"-3.000000 - 7.000000 ");
+        EXPECT_EQ(test->stringify(),"-3.000000 - -7.000000 ");
 }
 
 #endif
