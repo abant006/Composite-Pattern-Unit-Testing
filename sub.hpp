@@ -17,7 +17,7 @@ class Sub : public Base {
 			return left->evaluate() - right->evaluate();
 		}
 		virtual std::string stringify(){
-			return left->stringify() + "-" + right->stringify();
+			return left->stringify() + " - " + right->stringify();
 		}
 };
 #endif
