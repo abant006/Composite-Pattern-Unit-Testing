@@ -6,7 +6,7 @@
 #include "op.hpp"
 
 TEST(Rand, RandEval) {
-	RandT* test = new Rand();
+	Rand* test = new Rand();
 	EXPECT_GT(test->evaluate(),0);
 }
 
