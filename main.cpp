@@ -4,6 +4,9 @@
 #include "op.hpp"
 #include "add.hpp"
 #include "mult.hpp"
+#include "sub.hpp"
+#include "div.hpp"
+#include "rand.hpp"
 #include "pow.hpp"
 
 int main() {
